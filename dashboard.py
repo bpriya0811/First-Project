@@ -22,7 +22,6 @@ if fl is not None:
     df = pd.read_csv(filename, encoding="ISO-8859-1")
     st.info('File is Uploaded Successfully✔')
 else:
-    os.chdir(r'E:/streamlit')
     df = pd.read_csv("Superstore.csv",encoding="ISO-8859-1")
 
 col1, col2 =st.columns((2))
