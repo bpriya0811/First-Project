@@ -1,6 +1,6 @@
-streamlit
-plotly
-pandas
+streamlit==1.38.0
+plotly==5.24.0
+pandas==2.2.2
 pathlib
 os
 warnings
