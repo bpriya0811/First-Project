@@ -1,6 +1,9 @@
 #MainMenu{
     visibility: hidden;
 }
+body {
+    background-color: #000000;
+}
 footer{
     visibility: hidden;
 }
