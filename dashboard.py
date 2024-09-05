@@ -19,8 +19,9 @@ fl = st.file_uploader(":file_folder: Upload a file", type=(["txt","csv","xls","x
 if fl is not None:
     filename = fl.name
     st.write(filename)
-    df = pd.read_csv(filename, encoding="ISO-8859-1")
+    df = pd.read_csv(fl, encoding="ISO-8859-1")
     st.info('File is Uploaded Successfully✔')
+    st.write(df)
 else:
     df = pd.read_csv("Superstore.csv",encoding="ISO-8859-1")
 
