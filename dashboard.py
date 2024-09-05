@@ -8,8 +8,14 @@ import warnings
 warnings.filterwarnings('ignore')
 st.set_page_config(page_title="RetailAnalyzer", page_icon=":bar_chart:",layout="wide")
 
-current_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd()
-css_file = current_dir/'style.css'
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title(" :blue[Retail] Analysis Hub:bar_chart:")
 st.markdown('<style>div.block-container{padding-top:3rem;}</style>',unsafe_allow_html=True)
